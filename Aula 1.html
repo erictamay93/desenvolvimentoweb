@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 1</title>
+        <style>
+            p, h1, h3, legend, form, label{font-family: sans-serif;}
+            p{text-align: justify;}
+            h1{text-align: center;}
+            body{background-color: rgba(255, 150, 30););}
+        </style>
+    </head>
+    <body>
+        <font color="#ffffff">
+            <div align="center"><img src="cerveja1.jpeg" title="Cervejas"></div>
+            <h1>Hoje vamos fazer uma enquete!<br>Selecione as cervejas nacionais que você conhece!</h1>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+            <form method="post" action="mailto: seuemail@email.com"> Nome: <input type="text" size="16" maxlenght="64" name="Nome"/><br><br>
+                Data de nascimento:<input type="date" name="Data">
+            </fieldset><br>
+                <fieldset>
+                    <legend>Lista de cervejas nacionais</legend>
+                    <div>
+                        <input type="checkbox" name="Cerveja1" value="Beer1"/>
+                        <label>Baden Baden</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Cerveja2" value="Beer2"/>
+                        <label>Colorado</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Cerveja3" value="Beer3"/>
+                        <label>Coruja</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Cerveja4" value="Beer4"/>
+                        <label>Eisenbahn</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Cerveja5" value="Beer5"/>
+                        <label>Tupiniquim</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Cerveja6" value="Beer6"/>
+                        <label>Bierland</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Cerveja7" value="Beer7"/>
+                        <label>Eisenbahn</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Cerveja8" value="Beer8"/>
+                        <label>Ampolis (Cacilds)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Outra" value="Other"/>
+                        <label>Outra: </label><input type="text" size="16" maxlenght="64">
+                            <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+            <h3 align="center">Clique <a target="_blank" href="https://www.clubedomalte.com.br/">aqui</a> para ir para o site do Clube do Malte para saber mais sobre cervejas!</h3>
+
+        </font>
+    </body>
+</html>
