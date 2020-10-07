@@ -1,0 +1,71 @@
+<html>
+<head>
+<title> js04_salario1.html - aninhamento de if</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+    
+<body>
+<Script language="javascript">
+var js_ght;
+var js_vht;
+var js_inss;
+var js_tdes;
+var js_sb;
+var js_s1;
+
+js_ght= parseFloat(window.prompt('informe a quantidade de horas trabalhadas/mes:(135 a 180)','00'));
+js_vht= parseFloat(window.prompt('informe o valor da hora trabalhada:(25 a 50)', '00'));
+js_inss= parseFloat(window.prompt('Informe o percentural de desconto INSS:( 5 a 15)','00'));
+
+js_sb= js_vht * js_ght;
+js_tdes= (js_inss/100) * js_sb;
+js_s1= js_sb - js_tdes;
+
+document.write('<p><b> DEMONSTRATIVO PARA CALCULO DO SALARIO LIQUIDO</b>');
+
+document.write('<p>Quantidade de horas trabalhadas (135 a 180) => <b>' + js_ght + '</b>');
+if(js_ght > 180){
+    document.write('...(<b>Valor maximo excedido</b>)');
+}
+if(js_ght < 135){
+    document.write('...(<b>Valor minimo invalido</b>)');
+}
+document.write('<p>Valor da hora trabalhada (30 a 50)=> <b>' + js_vht + '</b>');
+if (js_vht > 50){
+    document.write('...(<b>valor maximo excedido<b>)');
+}
+if (js_vht < 25){
+    document.write('...(<b>valor minimo excedido<b>)');
+}
+document.write('<p>Percentual de descibti INSS(5 a 15)=>' + js_inss + '</b>');
+    if(js_inss > 15){
+        document.write('...(<b>Valor maximo excedido</b>)');
+}
+if (js_inss < 5){
+    document.write('...(<b>Valor minimo invalido</b>)');
+}
+document.write('<p>=======================');
+document.write('<p><b>Salario BRUTO= </b>' + js_sb);
+document.write('<p>Total de desconsto INSS= ' + js_tdes);
+document.write('<p><b>Salario LIQUIDO = </b>' + js_s1);
+
+if (js_s1 > 10500){
+    document.write('... (<b> salario elevado </b> maior que 10500)');
+}
+else{
+    if(js_sb>6000){
+        document.write('...(<b>Salario satisfatorio </b>maior que 6000)');
+}
+    else{
+        if (js_s1 > 3000){
+            document.write('...(<b>Salario moderado </b>maior que 3000)');
+        }
+        else{
+            document.write('...(<b>Salario insatistatorio</b>menor ou igual a 3000)');
+        }
+    }
+}
+</Script>
+</body>
+</html>

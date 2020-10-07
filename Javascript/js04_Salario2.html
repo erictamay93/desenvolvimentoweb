@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>js04_Salario2.html - do... while</title>
+<meta http-equiv="content-type" content="text/hmtl; charset=utf-8">
+<meta charset="utf-8">
+</head>
+    
+<body>
+<script language="javascript">
+
+var js_ght;
+var js_vht;
+var js_inss;
+var js_tdes;
+var js_sb;
+var js_s1;
+var js_resposta= true;
+
+do{
+js_ght= parseFloat(window.prompt('Informe a quantidade de horas trabalhadas/mes: (135 a 180)', '00'));
+js_vht= parseFloat(window.prompt('Informe o valor da hora trabalhada: (25 a 50)', '00'));
+js_inss= parseFloat(window.prompt('Informe o percentual de desconto INSS:(5 a 15)','00'));
+
+js_sb = js_vht * js_ght;
+js_tdes = (js_inss/100) * js_sb;
+js_s1 = js_sb - js_tdes;
+
+document.write('<p><b>DEMONSTRATIVO PARA CÁLCULO DO SALÁRIO LÍQUIDO</b>');
+document.write('<p>Quantidade de horas trabalhadas (135 a 180) => <b>' + js_qht + '</b>');
+if (js_ght > 100){
+    document.write('...(<b>Valor máximo excedido!</b>)');
+}
+if(js_ght < 135){
+    document.write('...(<b>Valor mínimo inválido!</b>)');
+}
+document.write('<p>Valor da hora trabalhada (25 a 50) => <b>' + js_vht + '</b>');
+if (js_vht > 50){
+    document.write('...(<b>Valor máximo excedido!</b>)');
+}
+if (js_vht < 25){
+    document.write('...(<b>Valor mínimo inválido!</b>)');
+}
+document.write('<p>Percentual de desconto INSS (5 a 15) => <b>' + js_inss + '</b>');
+if (js_inss > 15){
+    document.write('...(<b>Valor máximo execedido!</b>)');
+}
+if (js_inss <5 ){
+    document.write('... (<b>Valor mínimo inválido!</b>)');
+}
+
+document.write('<p><b> Salário BRUTO = </b>'+ js_sb);
+document.write('<p>Total de desconto INSS= '+js_tdes);
+document.write('<p><p><b>Salario LÍQUIDO = </b>'+js_s1);
+
+if (js_s1 > 10500){
+    document.write('...(<b>Salário elevado! </b>Maior que 10500)');
+    }
+else{
+    if (js_s1 > 6000){
+        document.write('...(<b>Salário satisfatório! </b>Maior que 6000)');
+        }
+    else{
+        if (js_s1 > 6000){
+            document.write('...(<b>Salario Satisfatorio! </b>Maior que 6000)');
+            }
+        if(js_s1 > 3000){
+            document.write('...(<b>SAlario moderado </b>Maior que 3000)');
+            }
+        else{
+            document.write('...(<b>Salario instatisfatorio </b> menor ou igual a 3000)');
+        }
+    }
+}
+
+document.write('<p>=================================================');
+js_resposta=window.confirm('deseja continuar');
+}
+while(js_resposta==true);
+</script>
+</body>
+</html>
