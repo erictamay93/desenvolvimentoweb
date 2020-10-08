@@ -1,0 +1,117 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: 'Roboto';
+}
+
+a{
+	color: #E3D0AE;
+	padding: 0 10px;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #083D69;
+}
+
+body{
+	background: #c4c5b7;
+}
+
+.menu-background{
+	background: #002140;
+}
+
+.menu-nav{
+	display: flex;
+	padding: 60px 0;
+	margin: 0;
+}
+
+.logo{
+	color: #E3D0AE;
+	font-weight: bold;
+}
+
+.title{
+	font-weight: bold;
+	font-size: 52px;
+	color: #002140;
+	text-transform: uppercase;
+}
+
+.title-back{
+	padding: 60px 0;
+}
+
+.title::after{
+	content: '';
+	width: 60px;
+	height: 4px;
+	background: #002140;
+	display: block;
+	margin: 10px auto auto auto;
+}
+
+.KA{
+	color: #002140;
+	font-weight: bold; 
+}
+
+.normal-text{
+	font-size: 22px;
+	text-align: justify;
+	color: #000000;
+	line-height: 1.4;
+}
+
+.back-mobile1{
+	border:	1px solid #000000;
+	border-radius: 2px;
+	margin-top: 40px;
+}
+
+.back-desktop1{
+	border:	1px solid #000000;
+	border-radius: 2px; 
+	margin-top: 40px;
+}
+
+.back-desktop2{
+	margin-left: 20px;
+	margin-top: 40px;
+	border:	1px solid #000000;
+	border-radius: 2px; 
+	margin-bottom: 40px;
+}
+
+.back-mobile2{
+	margin-right: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border:	1px solid #000000;
+	border-radius: 2px; 
+}
+
+.back-footer{
+	background: #002140;
+	padding: 60px 0;
+	margin-top: 60px;
+}
+
+.autores{
+	margin: 0;
+	color: #E3D0AE;
+	font-size: 22px;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.copy-r{
+	margin: 40px auto auto auto;
+	color: #E3D0AE;
+	font-size: 22px;
+	line-height: 1.4;
+	text-align: center;
+}
